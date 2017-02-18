@@ -10,4 +10,4 @@ port: 4000
 sass:
   style: full
 
-url: /foy-jekyll/
+url: /foy-jekyll
