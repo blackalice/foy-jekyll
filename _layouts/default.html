@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,800" rel="stylesheet">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/chocolat.css" type="text/css" media="screen" charset="utf-8">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.lazyload.js"></script>
-{% for css_name in page.extra_css %}
-    <link rel="stylesheet" href="/css/{{ css_name }}">
-{% endfor %}
+	
+	
+    {% if layout.extracss %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/portfolio.css">
+	{% endif %}
+
+
 
 
 
@@ -30,7 +34,6 @@ function myFunction() {
 </script>
 
 </head>
-
 
 <body>
     <div class="wrapper">
