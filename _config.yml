@@ -11,3 +11,4 @@ sass:
   style: full
 
 url: /foy-jekyll
+baseurl: /foy-jekyll
