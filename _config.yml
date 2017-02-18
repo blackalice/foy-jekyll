@@ -10,5 +10,5 @@ port: 4000
 sass:
   style: full
 
-url: "https://blackalice.github.io/foy-jekyll/"
+url: "https://blackalice.github.io/"
 baseurl: "/foy-jekyll"
