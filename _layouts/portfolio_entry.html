@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<head>
+	<script>
+
+	$(function() {
+    $("img.lazy").lazyload({ effect : "fadeIn", threshold : 0});
+});
+	</script>
+
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/portfolio.css">
+</head>
+
+<div class="wrapper">
+        <section>
+     
+
+<headerbg>
+	<div class="container_14 padding15" >
+		<projectimg class="grid_13" style="background-image:url({{ page.image }});" >
+        	<img class="image lazy" style="visibility: hidden; "data-original="{{ page.image }}"> 
+		</projectimg>
+	</div>
+</headerbg>
+	<div class="container_14">
+	
+<titlecontainer>
+<h1>
+   <title class="content grid_6">
+
+{{page.title}}
+</title>
+</h1>
+          <p class="post-meta">
+                {{ page.date | date_to_string }}
+          </p>
+
+</titlecontainer>
+
+
+<div class="container_14">	
+        {{ content }}
+</div>
+
+
+    </section>
+</div>
+</div>
