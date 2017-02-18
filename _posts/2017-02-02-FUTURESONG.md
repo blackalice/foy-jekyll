@@ -2,7 +2,7 @@
 layout: portfolio_entry
 title: 	VOIA - FUTURESONG ALBUM ART
 image: /img/future/future.jpg
-custom_css: portfolio.css
+
 ---
 
 
