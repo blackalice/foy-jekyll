@@ -1,26 +1,65 @@
 ---
 layout: portfolio_entry
-title: 	VOIA - FUTURESONG ALBUM ART
+title: 	VOIA - FUTURESONG ALBUM ART FIX
 image: /img/future/future.jpg
-img1: /img/future/inside.jpg
-img2: /img/future/side1.jpg
-img3: /img/future/future.jpg
-img4: /img/future/future.jpg
+
+stats:
+- client: Attack The Music
+  year: 2016/2017
+  type: album art/illustration/commercial
+img1:
+  - title: inside design
+    img: /img/future/inside.jpg
+img2:
+  - title: side
+    img: /img/future/side1.jpg
+
+img3:
+  - title: back and obi
+    img: /img/future/backobi.jpg
 page.categories: top
+
+color: 
+  - c: e5160e
 ---
-
-
-Letterpress salvia dingus, raw denim franzen air plant nulla schlitz sartorial fugiat drinking vinegar fam af next level pok pok. Snackwave pour-over 8-bit truffaut, actually raclette offal deep v listicle proident austin leggings chicharrones tofu blog listicle.<br><br>
-
-
-
+{% for item in page.color %}
+<style>
+.logosvg {
+	fill: #{{ item.c }};}
+li a:hover {
+    background-color: #{{ item.c }};}
+h1,h2,.currentpage{
+	color:#{{ item.c }};}
+</style>
+{% endfor %}
+ 
 <p class="col">
-Banh mzi paleo. Skateboard pabst pop-up hot chicken, kitsch quis vinyl ramps viral fam chicharrones tofu blog listicle. Jianbing bicycle rights health goth wayfarers, enim intelligentsia magna helvetica vice labore hoodie incididunt iPhone. <br><br>
-	Cras et rhoncus lacus. Maecenas ut urna at nulla commodo hendrerit. In ipsum tellus, ullamcorper non convallis quis, cursus nec metus. Mauris vehicula massa dolor, nec sodales tortor eleifend sit amet. <br><br>
-Sed in neque nisi. Sed rhoncus tempor sem. Maecenas at convallis neque. Aliquam sit amet quam bibendum, ultricies ante sed, congue nunc. 
+Authentic slow-carb cupidatat hot chicken fixie activated charcoal, lumbersexual hexagon voluptate food truck portland. Coloring book lyft vice raw denim. Occaecat next level gochujang, adipisicing offal four loko four dollar toast 3 wolf moon gastropub fixie. Chartreuse man braid exercitation proident, labore affogato marfa neutra. Snackwave normcore officia seitan vaporware. Adipisicing mixtape squid, commodo kale chips before they sold out selvage nihil. Tbh authentic proident, hot chicken +1 man braid readymade hella. <br><br>
+
+Raw denim locavore laboris venmo ramps retro viral, man bun bushwick incididunt et sunt tacos. Hell of activated charcoal seitan vaporware. Twee esse waistcoat +1 assumenda, cred coloring book literally est. Labore pop-up kombucha, nisi fanny pack bitters succulents hell of tempor heirloom culpa semiotics. Man braid culpa yr slow-carb flexitarian portland. Plaid salvia trust fund, 3 wolf moon echo park asymmetrical helvetica ex culpa truffaut voluptate lumbersexual yuccie. Locavore green juice plaid ad.<br><br>
+
+Blue bottle direct trade green juice, gochujang flexitarian vaporware prism messenger bag waistcoat ennui tofu bicycle rights dolor knausgaard. Direct trade everyday carry la croix id sapiente air plant, reprehenderit live-edge fam incididunt migas. Helvetica duis organic normcore offal. Twee 8-bit nisi fingerstache bitters, chillwave copper mug placeat skateboard. Bushwick blog VHS, ex in pug lyft scenester et tumeric af dreamcatcher. Nulla proident celiac 90's coloring book. Ugh marfa farm-to-table, meh flannel man bun typewriter microdosing.<br><br>
+
+Ethical chillwave brooklyn chartreuse asymmetrical consequat, butcher keffiyeh wayfarers helvetica marfa. Kitsch raw denim literally, glossier pabst chambray direct trade tousled pariatur fam. Yr heirloom iceland man bun man braid consequat. Ethical chicharrones subway tile, heirloom bushwick kombucha pour-over non health goth stumptown raw denim raclette. Coloring book tacos cardigan letterpress literally skateboard. Bicycle rights polaroid cardigan, poutine roof party meh sed nisi. Pop-up ea chia beard church-key shoreditch 90's affogato kogi offal, heirloom mlkshk cardigan.<br><br>
 </p>
 
-
-   <a class="chocolat-image" href="{{ site.baseurl }}{{ page.img1 }}" title="caption image 2">
-	<img class="image lazy"  data-original="{{ site.baseurl }}{{ page.img1 }}" > 
-    </a>
+{% for item in page.img1 %}
+<h2> {{ item.title }} </h2>
+   <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
+	<img class="image lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
+ </a>
+  {% endfor %}
+  
+  {% for item in page.img2 %}
+<h2> {{ item.title }} </h2>
+   <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
+	<img class="image lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
+ </a>
+  {% endfor %}
+  
+  {% for item in page.img3 %}
+<h2> {{ item.title }} </h2>
+   <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
+	<img class="image lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
+ </a>
+  {% endfor %}

@@ -35,7 +35,12 @@ extracss: true
 
 </title>
 </h1>
+
+	
           <p class="post-meta">
+		  {% for item in page.stats %}
+		  <h2>{{ item.client }}, </br> {{ item.year }} </br>  {{ item.type }}</h2>
+		  {% endfor %}
                 {{ page.date | date_to_string }}
           </p>
 

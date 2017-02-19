@@ -115,11 +115,20 @@ logo {
 h1{
 	font-size:3em;
 	font-family: "alternate-gothic-no-3-d";
-	color: #e5160e;
+	color: #ec008c;
 	line-height: 0.9em;
  	text-transform: uppercase;
 }
 
+
+h2 {
+	font-size:1.5em;
+	font-family: "alternate-gothic-no-3-d";
+	color: #ec008c;
+	margin-right: 10px;
+	margin-left:10px;
+	text-transform: uppercase;
+}
 
 .item {
  background: linear-gradient(270deg, #64ae9b, #c34516, #8b0dd2);
@@ -256,6 +265,7 @@ li a {
 
 li a:hover {
     background-color: #ec008c;
+	color:white;
 	height: 100%;
 	top: auto;
 	bottom: auto;
@@ -351,8 +361,18 @@ p{
 	-webkit-column-width: 200px;
 	-moz-column-width: 200px;
 	column-width: 200px;
+	
+	 padding: .3em;
+
+	margin: 0;
 }
 
+.col > p:first-child {
+  margin-top: 0;
+}
+.col > p:last-child {
+  margin-bottom: 0;
+}
 
 @media screen and (min-width : 320px) and (max-width : 720px) {
 
