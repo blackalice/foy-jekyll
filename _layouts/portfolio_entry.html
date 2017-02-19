@@ -1,6 +1,8 @@
 ---
 layout: default
 extracss: true
+portfolio: true
+type: portfolio
 ---
 
 
@@ -26,31 +28,34 @@ extracss: true
 		</projectimg>
 	</div>
 </headerbg>
-	<div class="container_14">
+
+
+<div class="container_14 ">
+	
 <titlecontainer>
 <h1>
-   <title class="content grid_6">
-
+<title class="content grid_6">
 {{page.title}}
-
 </title>
 </h1>
 
-	
-          <p class="post-meta">
+	 <p class="post-meta">
 		  {% for item in page.stats %}
-		  <h2>{{ item.client }}, </br> {{ item.year }} </br>  {{ item.type }}</h2>
+		  <h2>{{ item.client }} / {{ item.year }} / {{ item.type }} {{ page.categories | array_to_sentence_string  }}</h2>
 		  {% endfor %}
                 {{ page.date | date_to_string }}
           </p>
+        
 
 </titlecontainer>
+ 
 <div class="chocolat-parent" data-chocolat-title="set title">
-<div class="container_14">	
+<div class="container_14 ">	
         {{ content }}
-</div>
-</div>
+		
 
+</div>
+</div>
     </section>
 
 

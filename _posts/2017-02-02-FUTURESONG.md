@@ -1,37 +1,36 @@
 ---
 layout: portfolio_entry
-title: 	VOIA - FUTURESONG ALBUM ART FIX
+title: 	VOIA - FUTURESONG ALBUM ART
 image: /img/future/future.jpg
 
 stats:
 - client: Attack The Music
   year: 2016/2017
   type: album art/illustration/commercial
+  
+category: album art
+
 img1:
   - title: inside design
     img: /img/future/inside.jpg
 img2:
   - title: side
     img: /img/future/side1.jpg
-
 img3:
+  - title:
+    img: /img/future/side2.jpg
+
+img4:
   - title: back and obi
     img: /img/future/backobi.jpg
+
 page.categories: top
 
 color: 
   - c: e5160e
+  
 ---
-{% for item in page.color %}
-<style>
-.logosvg {
-	fill: #{{ item.c }};}
-li a:hover {
-    background-color: #{{ item.c }};}
-h1,h2,.currentpage{
-	color:#{{ item.c }};}
-</style>
-{% endfor %}
+{% include color.html %}
  
 <p class="col">
 Authentic slow-carb cupidatat hot chicken fixie activated charcoal, lumbersexual hexagon voluptate food truck portland. Coloring book lyft vice raw denim. Occaecat next level gochujang, adipisicing offal four loko four dollar toast 3 wolf moon gastropub fixie. Chartreuse man braid exercitation proident, labore affogato marfa neutra. Snackwave normcore officia seitan vaporware. Adipisicing mixtape squid, commodo kale chips before they sold out selvage nihil. Tbh authentic proident, hot chicken +1 man braid readymade hella. <br><br>
@@ -50,16 +49,25 @@ Ethical chillwave brooklyn chartreuse asymmetrical consequat, butcher keffiyeh w
  </a>
   {% endfor %}
   
-  {% for item in page.img2 %}
+  
+    {% for item in page.img2 %}
 <h2> {{ item.title }} </h2>
    <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
-	<img class="image lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
+	<img class="twinimage floatleft lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
  </a>
   {% endfor %}
   
   {% for item in page.img3 %}
 <h2> {{ item.title }} </h2>
    <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
+	<img class="twinimage floatright lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
+ </a>
+  {% endfor %}
+  
+  {% for item in page.img4 %}
+<h2> {{ item.title }} </h2>
+   <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
 	<img class="image lazy"  data-original="{{ site.baseurl }}{{ item.img }}" > 
  </a>
   {% endfor %}
+  

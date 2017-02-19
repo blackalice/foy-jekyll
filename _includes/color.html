@@ -1,0 +1,10 @@
+{% for item in page.color %}
+<style>
+.logosvg {
+	fill: #{{ item.c }};}
+li a:hover {
+    background-color: #{{ item.c }};}
+h1,h2,.currentpage{
+	color:#{{ item.c }};}
+</style>
+{% endfor %}
