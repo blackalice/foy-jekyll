@@ -7,10 +7,6 @@
 }
 
 
-html {
-	height:100%;
-}
-
 intro{
 background: linear-gradient(229deg, #eb008b, #ff8ff2, #7f0c4d);
 background-size: 600% 600%;
@@ -56,9 +52,9 @@ introtext{
 
 
 body{
+	margin:0px;
 	overflow:scroll;
 	background-color:#121212;
-	  min-height: 100%;
 
 }
 .floatright
@@ -281,8 +277,8 @@ li a:hover {
 footer{
 	width:100%;
 	height: 200px;
-
-	background-color:'';
+	display:inline-block;
+	background-color:#e5160e;
 	margin-top:30px;
 
 }
