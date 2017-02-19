@@ -156,9 +156,8 @@ animation: AnimationName 30s ease infinite;
 
 
 
-.testy{
-	width:500px;
-	display:block;
+.paddy{
+	margin-right:2%;
 }
 
 flex-item {
@@ -178,7 +177,7 @@ flex-item {
 /*PORTFOLIO*/
 row1{
 	height:400px;
-	width:50%;
+	width:48%;
 	margin-top: 30px;
 	display:inline-block;
 	-moz-box-sizing: border-box; 

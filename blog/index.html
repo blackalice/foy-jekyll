@@ -13,11 +13,14 @@ title: Blog
 		
 				<a href="{{ site.baseurl }}{{ post.url }}">
 				
-					<row1 style="background-image:url({{ site.baseurl }}{{ post.image }})" alt="{{ post.title }}" />
+					<row1 class="{% cycle "paddy"," "%}" style="background-image:url({{ site.baseurl }}{{ post.image }})" alt="{{ post.title }}" />
 			           
 			</a>
 			
             {% endif %}
+			
+		
+		
         {% endfor %}
 		
 		
