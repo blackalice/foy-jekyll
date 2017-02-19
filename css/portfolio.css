@@ -1,7 +1,7 @@
 /*title*/
 titlecontainer{
-	margin-top: -5px;
-	margin-bottom:30px;
+	margin-top: -70px;
+	margin-bottom:0px;
 	height:auto;
 	display:inline-block;
 	position:relative;
@@ -18,7 +18,7 @@ headerbg{
 	width:100%;
 }
 p{
-	color:#000;
+	color:#191919;
 }
 projectimg{
 	width:100%;

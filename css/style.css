@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
 .padding{
 	margin-right:15px;
 	margin-left:15px;
@@ -113,13 +112,13 @@ logo {
 }
 
 h1{
-	font-size:4em;
+	font-size:9em;
 	font-family: "acumin-pro-extra-condensed";
 	color: #ec008c;
 	line-height: 0.8em;
  	text-transform: uppercase;
 	font-weight: 900;
-	letter-spacing: -1px;
+	letter-spacing: -2px;
 }
 
 

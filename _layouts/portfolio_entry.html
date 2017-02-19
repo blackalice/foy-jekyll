@@ -33,21 +33,21 @@ type: portfolio
 <div class="container_14 ">
 
 <titlecontainer>
-<h1>
-<title class="content grid_12">
+	<h1>
+<title class="content grid_15">
 {{page.title}}
 </title>
 </h1>
 
-	 <p class="post-meta">
-		  {% for item in page.stats %}
-		  <h2>{{ item.client }} / {{ item.year }} / {{ item.type }} {{ page.categories | array_to_sentence_string  }}</h2>
-		  {% endfor %}
-                {{ page.date | date_to_string }}
-          </p>
 
 
 </titlecontainer>
+<h2>
+		 {% for item in page.stats %}
+		{{ item.client }} / {{ item.year }} / {{ item.type }} {{ page.categories | array_to_sentence_string  }}
+		 {% endfor %}
+</h2>
+
 
 <div class="chocolat-parent" data-chocolat-title="set title">
 <div class="container_14 ">
