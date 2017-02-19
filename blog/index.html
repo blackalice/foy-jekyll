@@ -2,25 +2,27 @@
 layout: default
 title: Blog
 ---
+<div class="container_14">
+<padding>
 
 
-    <section>
+
         {% for post in site.posts %}
 
-            <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-            <p class="post-meta">
-                {{ post.date | date_to_string }}
-            </p>
-
             {% if post.image %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-            <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
-            </a>
+		
+				<a href="{{ site.baseurl }}{{ post.url }}">
+				
+					<row1 style="background-image:url({{ site.baseurl }}{{ post.image }})" alt="{{ post.title }}" />
+			           
+			</a>
+			
             {% endif %}
-
-            <p class="post-excerpt">{{ post.excerpt | strip_html }} [<a style="color:#FC645F" href="{{ post.url }}">read more</a>]</p>
-
         {% endfor %}
-        
-    </section>
+		
+		
+		
+		
+ </padding>
+</div>	
 
