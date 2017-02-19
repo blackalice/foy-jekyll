@@ -14,7 +14,8 @@ extracss: true
 
 
 
-<div class="wrapper">
+
+
         <section>
      
 
@@ -26,27 +27,36 @@ extracss: true
 	</div>
 </headerbg>
 	<div class="container_14">
-	
 <titlecontainer>
-   <title class="content grid_6">
 <h1>
-{{page.title}}
-</h1>
-</title>
+   <title class="content grid_6">
 
+{{page.title}}
+
+</title>
+</h1>
           <p class="post-meta">
                 {{ page.date | date_to_string }}
           </p>
 
 </titlecontainer>
-
+<div class="chocolat-parent" data-chocolat-title="set title">
 
 <div class="container_14">	
         {{ content }}
 </div>
-
+</div>
 
     </section>
+
+
 </div>
-</div>
+
+				<script>
+	
+$(document).ready(function(){
+    $('.chocolat-parent').Chocolat();
+});
+	$('selector').Chocolat()
+</script>
 </html>

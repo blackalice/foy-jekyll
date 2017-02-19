@@ -364,6 +364,14 @@ hiddenportfolio{
 
 
 p{
+
+	font-family: 'Overpass', sans-serif;
+	line-height: 1.7em;
+	margin-right: 10px;
+	margin-left:10px;
+	color:#FFF;
+}
+.col{
 	-webkit-column-count: 2;
 	-webkit-column-gap: 20px;
 
@@ -376,14 +384,7 @@ p{
 	-webkit-column-width: 200px;
 	-moz-column-width: 200px;
 	column-width: 200px;
-	
-	font-family: 'Overpass', sans-serif;
-	line-height: 1.7em;
-	margin-right: 10px;
-	margin-left:10px;
-	color:#FFF;
 }
-
 
 
 @media screen and (min-width : 320px) and (max-width : 720px) {

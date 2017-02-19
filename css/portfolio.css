@@ -9,7 +9,6 @@ titlecontainer{
 
 title{
 	float:left;
-	
 }
 headerbg{
 	background-color:#121212;
@@ -17,7 +16,9 @@ headerbg{
 	overflow:hidden;
 	width:100%;
 }
-
+p{
+	color:#000;
+}
 projectimg{
 	width:100%;
 	height:850px;
@@ -41,23 +42,30 @@ projectimg{
 body{
 background-color:white;}
 
-p{
-	-webkit-column-count: 2;
-	-webkit-column-gap: 20px;
-
-	-moz-column-count: 2;
-	-moz-column-gap: 20px;
- 
-	column-count: 2;
-	column-gap: 20px;
-
-	-webkit-column-width: 200px;
-	-moz-column-width: 200px;
-	column-width: 200px;
-	
-	font-family: 'Overpass', sans-serif;
-	line-height: 1.7em;
-	margin-right: 10px;
-	margin-left:10px;
-	color:#0f0f0f;
+images{
+	display: inline-block;
+	max-width: 1300px;
+	min-height: 500px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:2px;
+	margin-bottom:30px;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	overflow:hidden;	
+	float:left;
 }
+
+img{
+	max-width:100%;overflow:hidden;	}
+
+
+.twinimage{
+	width: 49%;
+	margin-right:0px;
+	margin-left:0px;
+	max-width:49%;
+margin-bottom:30px;}
+
+
