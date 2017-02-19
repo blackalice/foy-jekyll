@@ -30,7 +30,7 @@ introtext{
 	text-align:center;
 	width:100%;
 	height:100%;
-	font-size: 10vw; 
+	font-size: 10vw;
 	color: white;
 	font-family: "alternate-gothic-no-3-d";
 }
@@ -45,7 +45,7 @@ introtext{
     50%{background-position:100% 5%}
     100%{background-position:0% 96%}
 }
-@keyframes maingradient { 
+@keyframes maingradient {
     0%{background-position:0% 96%}
     50%{background-position:100% 5%}
     100%{background-position:0% 96%}
@@ -56,7 +56,7 @@ body{
 	margin:0px;
 	overflow:scroll;
 	background-color:#121212;
-	
+
 }
 .floatright
 {float:right}
@@ -73,7 +73,7 @@ navbar{
 	background-color:#0b0b0b;
 	position:fixed;
 	z-index: 51;
-	
+
 }
 
 navbarbackground{
@@ -92,42 +92,43 @@ logo {
 	height: 100%;
 	float: left;
 	padding-left: 10px;
-	
+
 }
 
 
-.logosize{	
-	width: 50%; 
+.logosize{
+	width: 50%;
 	height: auto;
 	padding-top: 17px;
-	
+
 }
-	
+
 
 
 .logosvg {
 	fill: #ec008c;
 	width: 30px;
 	height: auto;
-	
+
 }
 
 h1{
-	font-size:3em;
-	font-family: "alternate-gothic-no-3-d";
+	font-size:4em;
+	font-family: "acumin-pro-extra-condensed";
 	color: #ec008c;
-	line-height: 0.9em;
+	line-height: 0.8em;
  	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: -1px;
 }
 
 
 h2 {
 	font-size:1.5em;
-	font-family: "alternate-gothic-no-3-d";
+	font-family: "acumin-pro-condensed";
 	color: #ec008c;
-	margin-right: 10px;
-	margin-left:10px;
 	text-transform: uppercase;
+
 }
 
 .item {
@@ -141,7 +142,7 @@ animation: AnimationName 30s ease infinite;
   -webkit-background-clip: text;
 	text-align: left;
 	line-height: 0.7em;
-	
+
   }
 
 
@@ -157,7 +158,7 @@ animation: AnimationName 30s ease infinite;
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName { 
+@keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -181,10 +182,10 @@ row1{
 	width:48%;
 	margin-top: 30px;
 	display:inline-block;
-	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-	overflow:hidden;	
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	overflow:hidden;
 	float:left;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -195,14 +196,14 @@ row1{
 	  transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.2s;}
-	
+
 	/*MOUSE OVER*/
 
 .test1{
 
 	 opacity: 0;
 }
-.test2:hover .test1{	
+.test2:hover .test1{
 
 	background-color: rgba(0,0,0,0.8);
 	 opacity: 1;
@@ -296,7 +297,7 @@ titlecontainer{
 
 title{
 	float:left;
-	
+
 }
 
 
@@ -306,7 +307,7 @@ title{
 
 	 opacity: 0;
 }
-.test2:hover .test1{	
+.test2:hover .test1{
 
 	background-color: rgba(0,0,0,0.8);
 	 opacity: 1;
@@ -342,7 +343,7 @@ hiddenportfolio{
 
 p{
 
-	font-family: 'Overpass', sans-serif;
+	font-family: 'acumin-pro', sans-serif;
 	line-height: 1.7em;
 	margin-right: 10px;
 	margin-left:10px;
@@ -354,14 +355,14 @@ p{
 
 	-moz-column-count: 2;
 	-moz-column-gap: 20px;
- 
+
 	column-count: 2;
 	column-gap: 20px;
 
 	-webkit-column-width: 200px;
 	-moz-column-width: 200px;
 	column-width: 200px;
-	
+
 	 padding: .3em;
 
 	margin: 0;
@@ -377,9 +378,9 @@ p{
 @media screen and (min-width : 320px) and (max-width : 720px) {
 
 
-	
+
 	/*nav*/
-	
+
 	ul.topnav {
    list-style-type: none;
     margin: 0;
@@ -389,16 +390,16 @@ p{
 	font-family: 'Overpass', sans-serif;
 	font-size:12pt;
 	overflow:visible;
-	
-	
+
+
 }
-	
+
 	.icon{
 	visibility:visible;
 }
 
   ul.topnav li {display: none;}
-  
+
   ul.topnav li.icon {
     float: right;
     display: inline-block;
@@ -406,8 +407,8 @@ p{
   }
     ul.topnav.responsive {position:absolute;
 	width:100%;
-	
-	
+
+
 	}
   ul.topnav.responsive li.icon {
     position: absolute;
@@ -417,9 +418,9 @@ p{
 
 
   }
-  
-  
-  
+
+
+
   ul.topnav.responsive li {
     float: none;
     display: block;
@@ -427,20 +428,20 @@ p{
   	background-color:#0b0b0b;
 
   }
-  
+
   ul.topnav.responsive li a {
     display: block;
     text-align: center;
-	
+
   }
 
-	
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
 
 
 }

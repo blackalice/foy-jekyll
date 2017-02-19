@@ -19,22 +19,22 @@ type: portfolio
 
 
         <section>
-     
+
 
 <headerbg>
 	<div class="container_14 padding15" >
 		<projectimg class="grid_13" style="background-image:url({{ site.baseurl }}{{ page.image }});" >
-        	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}"> 
+        	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}">
 		</projectimg>
 	</div>
 </headerbg>
 
 
 <div class="container_14 ">
-	
+
 <titlecontainer>
 <h1>
-<title class="content grid_6">
+<title class="content grid_12">
 {{page.title}}
 </title>
 </h1>
@@ -45,14 +45,14 @@ type: portfolio
 		  {% endfor %}
                 {{ page.date | date_to_string }}
           </p>
-        
+
 
 </titlecontainer>
- 
+
 <div class="chocolat-parent" data-chocolat-title="set title">
-<div class="container_14 ">	
+<div class="container_14 ">
         {{ content }}
-		
+
 
 </div>
 </div>
@@ -62,7 +62,7 @@ type: portfolio
 </div>
 
 				<script>
-	
+
 $(document).ready(function(){
     $('.chocolat-parent').Chocolat();
 });

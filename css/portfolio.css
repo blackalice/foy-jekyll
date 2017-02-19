@@ -29,14 +29,14 @@ projectimg{
 	margin-top:30px;
 	margin-bottom:30px;
 	display:inline-block;
-	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-	overflow:hidden;	
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	overflow:hidden;
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position: center;
-	
+
 
 }
 
@@ -51,10 +51,10 @@ images{
 	margin-left:auto;
 	margin-top:2px;
 	margin-bottom:30px;
-	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-	overflow:hidden;	
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	overflow:hidden;
 	float:left;
 }
 
@@ -70,3 +70,7 @@ img{
 margin-bottom:30px;}
 
 
+h2 {
+	margin-right: 10px;
+	margin-left:10px;
+}

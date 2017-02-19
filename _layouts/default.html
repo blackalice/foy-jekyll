@@ -12,8 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,800" rel="stylesheet">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/chocolat.css" type="text/css" media="screen" charset="utf-8">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.lazyload.js"></script>
-	
-	
+
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+
+
+
     {% if layout.extracss %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/portfolio.css">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.chocolat.js"></script>
@@ -38,7 +41,7 @@ function myFunction() {
 
 <body>
     <div class="wrapper">
-	
+
 	<navbarbackground>
 	</navbarbackground>
    	 <div class="container_14" style="padding-bottom:75px;">
@@ -48,20 +51,20 @@ function myFunction() {
 				<polygon points="0 20.6 22.5 5.8 22.5 0 0 14.8 " class="logosvg"/>
 				<polygon points="15.1 13.7 0 23.6 0 29.4 15.1 19.5 " class="logosvg"/></svg>
 			</logo>
-		
+
 		<ul class="topnav" id="myTopnav">
-	
+
 
   			<li><a class="{% if page.type == 'contact' or layout.type == 'contact' %} currentpage {% endif %}" href="{{ site.baseurl }}/contact/">Contact</a></li>
-			
+
   			<li><a class="{% if page.type == 'portfolio' or layout.type == 'portfolio' %} currentpage {% endif %}" href="{{ site.baseurl }}/blog/">Portfolio</a></li>
-			
+
   			<li><a class="{% if page.type == 'spare' or layout.type == 'spare' %} currentpage {% endif %}" href="{{ site.baseurl }}/portfolio/">Spare</a></li>
   			<li><a class="{% if page.type == 'about' or layout.type == 'about' %} currentpage {% endif %}" href="{{ site.baseurl }}/about/">About</a></li>
    			<li class="icon">
    			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-			
-			
+
+
 		</ul>
 		</navbar>
 	</div>
@@ -70,15 +73,30 @@ function myFunction() {
 
 
 
-         {{ content }} 
-	
+         {{ content }}
 
-      
+
+
     </div>
 
 
 <HR WIDTH="99%">
 <h1 style=text-align:center;>FOOTER AREA</h1>
+<script>
+// init Isotope
+var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+$('.button-group a.button').on('click', function(){
+	$('.button-group a.button').removeClass('active');
+	$(this).addClass('active');
+});
+</script>
 
 </body>
 </html>
