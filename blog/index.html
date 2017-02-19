@@ -6,15 +6,17 @@ title: Blog
 <padding>
 
 
-
+			
+			
         {% for post in site.posts %}
 
             {% if post.image %}
 		
 				<a href="{{ site.baseurl }}{{ post.url }}">
 				
-					<row1 class="{% cycle "paddy"," "%}" style="background-image:url({{ site.baseurl }}{{ post.image }})" alt="{{ post.title }}" />
-			           
+					<row1 class="{% cycle "paddy"," "%} test2" style="background-image:url({{ site.baseurl }}{{ post.image }})" alt="{{ post.title }}" >
+			           <h1 class="test1"> {{ post.title }}</h1>
+					</row1>
 			</a>
 			
             {% endif %}

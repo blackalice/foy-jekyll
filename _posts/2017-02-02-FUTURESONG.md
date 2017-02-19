@@ -6,6 +6,7 @@ img1: /img/future/inside.jpg
 img2: /img/future/side1.jpg
 img3: /img/future/future.jpg
 img4: /img/future/future.jpg
+page.categories: top
 ---
 
 
