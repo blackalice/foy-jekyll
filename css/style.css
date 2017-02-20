@@ -46,48 +46,7 @@ container{
 
 
 
-intro{
-background: linear-gradient(229deg, #eb008b, #ff8ff2, #7f0c4d);
-background-size: 600% 600%;
 
--webkit-animation: maingradient 30s ease infinite;
--moz-animation: maingradient 30s ease infinite;
-animation: maingradient 30s ease infinite;
-
-margin-top:75px;
-	display:inline-flex;
-	color:white;
-	width:100%;
-	height:75vh;
-}
-
-introtext{
-	display:inline-flex;
-	justify-content: center; /* align horizontal */
-	align-items: center; /* align vertical */
-	text-align:center;
-	width:100%;
-	height:100%;
-	font-size: 10vw;
-	color: white;
-	font-family: "alternate-gothic-no-3-d";
-}
-
-@-webkit-keyframes maingradient {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
-}
-@-moz-keyframes maingradient {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
-}
-@keyframes maingradient {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
-}
 
 
 body{
@@ -157,6 +116,8 @@ h1{
  	text-transform: uppercase;
 	font-weight: 900;
 	letter-spacing: -2px;
+	margin-top: 0em;
+margin-bottom: 0em;
 }
 
 
@@ -168,38 +129,6 @@ h2 {
 
 }
 
-.item {
- background: linear-gradient(270deg, #64ae9b, #c34516, #8b0dd2);
-background-size: 600% 600%;
-
--webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-	text-align: left;
-	line-height: 0.7em;
-
-  }
-
-
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 
 
 
@@ -329,19 +258,8 @@ footer {
 }
 
 
-/*title*/
-titlecontainer{
-	margin-top: 30px;
-	height:auto;
-	display:inline-block;
-	position:relative;
-	width: 100%;
-}
 
-title{
-	float:left;
 
-}
 
 
 /*MOUSE OVER*/

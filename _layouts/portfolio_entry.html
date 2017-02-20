@@ -31,17 +31,13 @@ type: portfolio
 
 
 <div class="container_14 ">
-
+<h1>
 <titlecontainer>
-	<h1>
 <title class="content grid_15">
 {{page.title}}
 </title>
-</h1>
-
-
-
 </titlecontainer>
+</h1>
 <h2>
 		 {% for item in page.stats %}
 		{{ item.client }} / {{ item.year }} / {{ item.type }} {{ page.categories | array_to_sentence_string  }}
