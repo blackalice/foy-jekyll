@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/chocolat.css" type="text/css" media="screen" charset="utf-8">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.lazyload.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/footer.js"></script>
+
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 
 
@@ -41,11 +42,11 @@ function myFunction() {
 
 <body>
 
-
-	<navbarbackground>
-	</navbarbackground>
   <container>
-   	 <div class="container_14" style="padding-bottom:75px;">
+  <navbarbackground>
+	</navbarbackground>
+
+     <div class="container_14 header" style="padding-bottom:75px;">
 		<navbar>
 			<logo class="grid_1">
 				<svg class="logosize item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 29.4">
@@ -55,7 +56,6 @@ function myFunction() {
 
 		<ul class="topnav" id="myTopnav">
 
-
   			<li><a class="{% if page.type == 'contact' or layout.type == 'contact' %} currentpage {% endif %}" href="{{ site.baseurl }}/contact/">Contact</a></li>
 
   			<li><a class="{% if page.type == 'portfolio' or layout.type == 'portfolio' %} currentpage {% endif %}" href="{{ site.baseurl }}/blog/">Portfolio</a></li>
@@ -64,17 +64,12 @@ function myFunction() {
   			<li><a class="{% if page.type == 'about' or layout.type == 'about' %} currentpage {% endif %}" href="{{ site.baseurl }}/about/">About</a></li>
    			<li class="icon">
    			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-
-
 		</ul>
 		</navbar>
 	</div>
 
+{{ content }}
 
-
-
-
-         {{ content }}
 
 </container>
 
@@ -97,6 +92,15 @@ $('.button-group a.button').on('click', function(){
 	$('.button-group a.button').removeClass('active');
 	$(this).addClass('active');
 });
+</script>
+<script>
+
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init();
 </script>
 
 </body>

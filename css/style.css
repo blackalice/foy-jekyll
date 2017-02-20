@@ -10,6 +10,39 @@ container{
 	margin-bottom: 40px;
 	display:block;
 }
+.button{
+	display:inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: white;
+	cursor: pointer;
+}
+.active{
+	background-color:#ec008c;
+	color: white;
+}
+
+
+
+.headroom--pinned {
+    display: block;
+}
+.headroom--unpinned {
+    display: none;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
 
 
 
@@ -76,9 +109,8 @@ navbar{
 	max-width: 1300px;
 	display: block;
 	background-color:#0b0b0b;
-	position:fixed;
 	z-index: 51;
-
+position:absolute;;
 }
 
 navbarbackground{
@@ -88,7 +120,7 @@ navbarbackground{
 	background-color:#0b0b0b;
 	float: left;
 	z-index: 50;
-	position:fixed;
+	position:relative;
  }
 
 
@@ -242,10 +274,13 @@ ul.topnav {
     margin: 0;
     padding: 0;
 	height: 100%;
-	font-family: 'Overpass', sans-serif;
-	font-size:12pt;
+	font-family: 'acumin-pro-condensed', sans-serif;
+
+	text-transform:uppercase;
+	font-size:1.25em;
 	overflow:visible;
 	margin-right:15px;
+
 }
 
 .icon{
@@ -259,7 +294,7 @@ ul.topnav {
 
 li{
     float: right;
-	padding-top: 14px;
+	padding-top: 8px;
 }
 
 li a {
