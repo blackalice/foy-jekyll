@@ -27,7 +27,9 @@ filters{
 	height: auto;
 }
 
-
+.hide{
+	visibility: hidden;
+}
 .active{
 	background-color:#ec008c;
 	color: white;
