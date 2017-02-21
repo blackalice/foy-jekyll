@@ -10,6 +10,8 @@ stats:
 
 category: album-art
 
+headline: true
+
 img1:
   - title: inside design
     img: /img/future/inside.jpg
@@ -24,7 +26,6 @@ img4:
   - title: back and obi
     img: /img/future/backobi.jpg
 
-page.categories: top
 
 color:
   - c: e5160e

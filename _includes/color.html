@@ -1,7 +1,9 @@
 {% for item in page.color %}
 <style>
 .logosvg {
-	fill: #{{ item.c }};}
+	fill: #{{ item.c }};
+	 transition: background-color 0.5s ease;
+}
 li a:hover {
     background-color: #{{ item.c }};}
 h1,h2,.currentpage{

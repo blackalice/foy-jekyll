@@ -5,7 +5,6 @@
 	margin-left:15px;
 	display:block;
 }
-
 container{
 	margin-bottom: 40px;
 	display:block;
@@ -17,14 +16,34 @@ container{
 	padding: 0.2em 1em 0.2em 1em;
 	height: 50px;
 	background-color: white;
+	border: none;
 	cursor: pointer;
 	text-align: center;
+}
+.filtericon{
+	width: 50px;
+	height: 55px;
+	background-color: #ec008c;
+	color:white;
+	float:left;
 }
 
 filters{
 	display: inline-block;
 	width: 100%;
 	height: auto;
+}
+
+.button-group{
+
+	display:inline-block;
+	float:right;
+
+}
+
+
+filterslide{
+	display:none;
 }
 
 .hide{
@@ -37,23 +56,6 @@ filters{
 
 
 
-.headroom--pinned {
-    display: block;
-}
-.headroom--unpinned {
-    display: none;
-}
-
-.headroom {
-    will-change: transform;
-    transition: transform 200ms linear;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
 
 
 
@@ -64,8 +66,9 @@ filters{
 
 body{
 	margin:0px;
-	overflow:scroll;
+	overflow-x: hidden;
 	background-color:#121212;
+
 
 }
 .floatright
@@ -75,25 +78,34 @@ body{
 
 
 
-navbar{
+header{
 	height: 75px;
-	width: 100vw;
-	max-width: 1300px;
+	width: 100%;
 	display: block;
 	background-color:#0b0b0b;
 	z-index: 51;
-position:absolute;;
+	overflow:visible;
+position:fixed;
+left:0;
+right:0;
+top:0;
+transition: top 0.2s ease-in-out;
+}
+.nav-up {
+    top: -75px;
 }
 
-navbarbackground{
-	width: 100%;
-	height: 75px;
-	display: block;
-	background-color:#0b0b0b;
-	float: left;
-	z-index: 50;
-	position:relative;
- }
+
+
+
+.maxwidth{
+	max-width:1300px;
+	left:0;
+	right:0;
+
+	margin-left: auto;
+margin-right: auto;
+}
 
 
 logo {
@@ -127,8 +139,8 @@ h1{
 	color: #ec008c;
 	line-height: 0.8em;
  	text-transform: uppercase;
-	font-weight: 900;
-	letter-spacing: -2px;
+	font-weight: 700;
+	letter-spacing: -4px;
 	margin-top: 0em;
 margin-bottom: 0em;
 }
@@ -161,6 +173,21 @@ margin-bottom: 0em;
 row1{
 	height:300px;
 	width:48%;
+	margin-top: 30px;
+	display:inline-block;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	overflow:hidden;
+	float:left;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+row2{
+	height:500px;
+	width:100%;
 	margin-top: 30px;
 	display:inline-block;
 	-moz-box-sizing: border-box;

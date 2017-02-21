@@ -7,30 +7,47 @@ type: portfolio
 <padding>
 
 <filters>
-<button class="button" style="display:block;"> pee </button>
-
+<button class="button filtericon" style="display:block;"> <i class="material-icons">filter_list</i> </button>
           <filterslide>
             <h2>
   	          <div class="button-group filter-button-group">
   	    {% for category in site.categories %}
   	        <a class="button filterbuttons" data-filter=".{{ category | first}}">{{ category | first | replace: '-', '&nbsp;' }}</a>
   	    {% endfor %}
-  	        <a  class="button active allbutton" data-filter="*">All</a>
+  	        <a class="button active allbutton" data-filter="*">All</a>
   	  </div>
      </h2>
    </filterslide>
 </filters>
 
 
+<div class="grid">
+{% for post in site.posts %}
+    {% if post.headline %}
+     <row2 style="background-image:url({{ site.baseurl }}{{ post.image }})" class="test2 element-item {{ post.category }}">
+        <a class="test1" href="{{ post.url | prepend: site.baseurl }}"> <h2 class="test1"> {{ post.title }} </h2> </a>
+     </row2>
+    {% endif %}
+{% endfor %}
+</div>
+
 
 
 
 	<div class="grid">
+    {% assign postCounter = 0 %}
+    {% assign maxPost = 20 %}
 	    {% for post in site.posts %}
+      {% if post.headline == "" or post.headline == nil %}
 	     <row1 style="background-image:url({{ site.baseurl }}{{ post.image }})" class="test2 element-item {{ post.category }} {% cycle "paddy"," "%} ">
  					<a class="test1" href="{{ post.url | prepend: site.baseurl }}"> <h2 class="test1"> {{ post.title }} </h2> </a>
 	     </row1>
-	    {% endfor %}
+       {% assign postCounter = postCounter | plus: 1 %}
+          {% if postCounter >= maxPost %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
 	</div>
 
 

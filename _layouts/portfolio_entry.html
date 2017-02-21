@@ -32,7 +32,7 @@ type: portfolio
 
 
 <div class="container_14 ">
-	<h2>
+	<h2 class="hide">
 		{% for item in page.stats %}
 		{{ page.categories | array_to_sentence_string  }}
 		{% endfor %}</H2>
@@ -43,7 +43,7 @@ type: portfolio
 </title>
 </titlecontainer>
 </h1>
-<h2>
+<h2 class="hide">
 		 {% for item in page.stats %}
 		{{ item.client }}     &nbsp;  |   &nbsp;    {{ item.year }}    &nbsp;   |   &nbsp;    {{ item.type }}
 		 {% endfor %}

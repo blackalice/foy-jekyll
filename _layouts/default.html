@@ -4,6 +4,8 @@
 
     <meta charset=utf-8 />
     <title>  TEST</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <script src="https://use.typekit.net/tve3icz.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
@@ -25,29 +27,23 @@
 
 
 
-<script>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+
 
 </head>
 
 <body>
 
   <container>
-  <navbarbackground>
-	</navbarbackground>
 
-     <div class="container_14 header" style="padding-bottom:75px;">
-		<navbar>
+
+
+
+<div class="container_14" style="padding-bottom:75px;">
+
+
+    <header class="nav-down">
+      <div class="maxwidth">
 			<logo class="grid_1">
 				<svg class="logosize item" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 29.4">
 				<polygon points="0 20.6 22.5 5.8 22.5 0 0 14.8 " class="logosvg"/>
@@ -63,10 +59,12 @@ function myFunction() {
   			<li><a class="{% if page.type == 'spare' or layout.type == 'spare' %} currentpage {% endif %}" href="{{ site.baseurl }}/portfolio/">Spare</a></li>
   			<li><a class="{% if page.type == 'about' or layout.type == 'about' %} currentpage {% endif %}" href="{{ site.baseurl }}/about/">About</a></li>
    			<li class="icon">
-   			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+   	<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
 		</ul>
-		</navbar>
-	</div>
+  </div>
+</header>
+
+</div>
 
 {{ content }}
 
@@ -95,15 +93,7 @@ $('.button-group a.button').on('click', function(){
 	$(this).addClass('active');
 });
 </script>
-<script>
 
-// grab an element
-var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init();
-</script>
 
 
 <script>
@@ -115,6 +105,16 @@ $(document).ready(function(){
         $('a.allbutton').delay(200).addClass('active');
     });
 });
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 </script>
 </body>
 </html>
