@@ -25,7 +25,7 @@
 
 
 
-
+<script>
 
 <script>
 function myFunction() {
@@ -102,6 +102,15 @@ var headroom  = new Headroom(myElement);
 // initialise
 headroom.init();
 </script>
-
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("filterslide").slideToggle(100);
+        $grid.isotope({filter: '*'});
+        $('a.filterbuttons').delay(200).removeClass('active');
+        $('a.allbutton').delay(200).addClass('active');
+    });
+});
+</script>
 </body>
 </html>

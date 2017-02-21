@@ -12,11 +12,22 @@ container{
 }
 .button{
 	display:inline-block;
-	width: 100px;
+	width: 150px;
+	margin: 5px;
+	padding: 0.2em 1em 0.2em 1em;
 	height: 50px;
 	background-color: white;
 	cursor: pointer;
+	text-align: center;
 }
+
+filters{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+
 .active{
 	background-color:#ec008c;
 	color: white;
@@ -126,6 +137,8 @@ h2 {
 	font-family: "acumin-pro-condensed";
 	color: #ec008c;
 	text-transform: uppercase;
+	margin-top: 0em;
+margin-bottom: 0em;
 
 }
 

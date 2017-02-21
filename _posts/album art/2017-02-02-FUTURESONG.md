@@ -8,7 +8,7 @@ stats:
   year: 2016/2017
   type: album art/illustration/commercial
 
-category: albumart
+category: album-art
 
 img1:
   - title: inside design

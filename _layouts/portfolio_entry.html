@@ -23,6 +23,7 @@ type: portfolio
 
 <headerbg>
 	<div class="container_14 padding15" >
+
 		<projectimg class="grid_13" style="background-image:url({{ site.baseurl }}{{ page.image }});" >
         	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}">
 		</projectimg>
@@ -31,6 +32,10 @@ type: portfolio
 
 
 <div class="container_14 ">
+	<h2>
+		{% for item in page.stats %}
+		{{ page.categories | array_to_sentence_string  }}
+		{% endfor %}</H2>
 <h1>
 <titlecontainer>
 <title class="content grid_15">
@@ -40,7 +45,7 @@ type: portfolio
 </h1>
 <h2>
 		 {% for item in page.stats %}
-		{{ item.client }} / {{ item.year }} / {{ item.type }} {{ page.categories | array_to_sentence_string  }}
+		{{ item.client }}     &nbsp;  |   &nbsp;    {{ item.year }}    &nbsp;   |   &nbsp;    {{ item.type }}
 		 {% endfor %}
 </h2>
 

@@ -6,18 +6,26 @@ type: portfolio
 <div class="container_14">
 <padding>
 
+<filters>
+<button class="button" style="display:block;"> pee </button>
+
+          <filterslide>
+            <h2>
+  	          <div class="button-group filter-button-group">
+  	    {% for category in site.categories %}
+  	        <a class="button filterbuttons" data-filter=".{{ category | first}}">{{ category | first | replace: '-', '&nbsp;' }}</a>
+  	    {% endfor %}
+  	        <a  class="button active allbutton" data-filter="*">All</a>
+  	  </div>
+     </h2>
+   </filterslide>
+</filters>
 
 
- <h2>
-	<div class="button-group filter-button-group">
-	    {% for category in site.categories %}
-	        <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
-	    {% endfor %}
-	        <a class="button active" data-filter="*">All</a>
-	</div>
-</h2>
 
-	<div class="grid ">
+
+
+	<div class="grid">
 	    {% for post in site.posts %}
 	     <row1 style="background-image:url({{ site.baseurl }}{{ post.image }})" class="test2 element-item {{ post.category }} {% cycle "paddy"," "%} ">
  					<a class="test1" href="{{ post.url | prepend: site.baseurl }}"> <h2 class="test1"> {{ post.title }} </h2> </a>
