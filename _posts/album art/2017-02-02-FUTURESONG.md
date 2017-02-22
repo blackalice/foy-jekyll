@@ -1,7 +1,7 @@
 ---
 layout: portfolio_entry
 title: 	VOIA - FUTURESONG ALBUM ART
-image: /img/future/future.jpg
+image: /img/future/bannertest.jpg
 
 stats:
 - client: Attack The Music
@@ -28,7 +28,7 @@ img4:
 
 
 color:
-  - c: e5160e
+  - c: FFF
 
 ---
 {% include color.html %}

@@ -21,17 +21,18 @@ type: portfolio
         <section>
 
 
-
-
-
+<div style="position: relative;">
+<div id="overlayfade" style="background-image:url({{ site.baseurl }}/img/overlay.png"></div>
 		<projectimg style="background-image:url({{ site.baseurl }}{{ page.image }});">
         	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}"">
 		</projectimg>
+</div>
+
 
 
 
 <div class="container_14">
-<div id="anything">
+<div id="anything1">
 	<titlecontainer>
 
 		<h1>
@@ -40,11 +41,7 @@ type: portfolio
 	</title>
 	</h1>
 
-	<h2>
-			 {% for item in page.stats %}
-			{{ item.client }}     &nbsp;  |   &nbsp;    {{ item.year }}    &nbsp;   |   &nbsp;    {{ item.type }}
-			 {% endfor %}
-	</h2>
+
 	</titlecontainer>
 </div>
 
