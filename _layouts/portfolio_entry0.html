@@ -21,30 +21,33 @@ type: portfolio
         <section>
 
 
+<headerbg>
+	<div class="container_14 padding15" >
 
-
-
-		<projectimg style="background-image:url({{ site.baseurl }}{{ page.image }});" >
+		<projectimg class="grid_13" style="background-image:url({{ site.baseurl }}{{ page.image }});" >
         	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}">
 		</projectimg>
+	</div>
+</headerbg>
 
 
-
-<div class="container_14">
-	<titlecontainer>
-		<h1>
-	<title class="content grid_15">
-	{{page.title}}
-
-	</title>
-	</h1>
-	<h2>
-			 {% for item in page.stats %}
-			{{ item.client }}     &nbsp;  |   &nbsp;    {{ item.year }}    &nbsp;   |   &nbsp;    {{ item.type }}
-			 {% endfor %}
-	</h2>
-	</titlecontainer>
-
+<div class="container_14 ">
+	<h2 class="hide">
+		{% for item in page.stats %}
+		{{ page.categories | array_to_sentence_string  }}
+		{% endfor %}</H2>
+<h1>
+<titlecontainer>
+<title class="content grid_15">
+{{page.title}}
+</title>
+</titlecontainer>
+</h1>
+<h2 class="hide">
+		 {% for item in page.stats %}
+		{{ item.client }}     &nbsp;  |   &nbsp;    {{ item.year }}    &nbsp;   |   &nbsp;    {{ item.type }}
+		 {% endfor %}
+</h2>
 
 
 <div class="chocolat-parent" data-chocolat-title="set title">
