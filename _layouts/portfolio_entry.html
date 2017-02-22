@@ -24,27 +24,29 @@ type: portfolio
 
 
 
-		<projectimg style="background-image:url({{ site.baseurl }}{{ page.image }});" >
-        	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}">
+		<projectimg style="background-image:url({{ site.baseurl }}{{ page.image }});">
+        	<img class="image lazy" style="visibility: hidden;" "data-original="{{ site.baseurl }}{{ page.image }}"">
 		</projectimg>
 
 
 
 <div class="container_14">
+<div id="anything">
 	<titlecontainer>
+
 		<h1>
 	<title class="content grid_15">
 	{{page.title}}
-
 	</title>
 	</h1>
+
 	<h2>
 			 {% for item in page.stats %}
 			{{ item.client }}     &nbsp;  |   &nbsp;    {{ item.year }}    &nbsp;   |   &nbsp;    {{ item.type }}
 			 {% endfor %}
 	</h2>
 	</titlecontainer>
-
+</div>
 
 
 <div class="chocolat-parent" data-chocolat-title="set title">

@@ -1,6 +1,5 @@
 /*title*/
 titlecontainer{
-
 	margin-bottom:0px;
 	height:auto;
 	display:inline-block;
@@ -8,11 +7,12 @@ titlecontainer{
 	width: auto;
 	background-color: #121212;
 	margin-top: -200px;
-
 	padding-top: 15px;
 	padding-left: 20px;
 	padding-bottom:50px;
-
+}
+#anything {
+	display:none;
 }
 
 title{

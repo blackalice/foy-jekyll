@@ -5,7 +5,13 @@
     <meta charset=utf-8 />
     <title>  TEST</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script>
+document.addEventListener("scroll", function() {
 
+if (window.pageYOffset > 75)
+document.getElementById('anything').style.display = "block";
+});
+ </script>
     <script src="https://use.typekit.net/tve3icz.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
