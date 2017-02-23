@@ -39,7 +39,7 @@ document.getElementById('anything').style.display = "block";
 </head>
 
 <body>
-<div id="skrollr-body">
+
   <container>
 
 
@@ -124,9 +124,15 @@ function myFunction() {
 </script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/skrollr.js"></script>
 <script type="text/javascript">
- var s = skrollr.init({forceHeight: false});
+$(function() {
+var windowWidth = $(window).width();
+if(windowWidth > 767){
+skrollr.init({
+forceHeight: false
+});
+}});
  </script>
  <script type="text/javascript" src="{{ site.baseurl }}/js/footer.js"></script>
- </div>
+
 </body>
 </html>
