@@ -1,6 +1,6 @@
 function footerAlign() {
   $('footer').css('display', 'block');
-  $('footer').css('height', 'auto');
+  $('footer').css('height', '400px');
   var footerHeight = $('footer').outerHeight();
   $('body').css('padding-bottom', footerHeight);
   $('footer').css('height', footerHeight);

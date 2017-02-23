@@ -80,7 +80,7 @@ body{
 
 
 header{
-	height: 75px;
+	height: 60px;
 	width: 100%;
 	display: block;
 	background-color:#0b0b0b;
@@ -90,8 +90,9 @@ position:fixed;
 left:0;
 right:0;
 top:0;
-transition: top 0.2s ease-in-out;
 }
+
+
 .nav-up {
     top: -75px;
 }
@@ -119,16 +120,16 @@ logo {
 
 
 .logosize{
-	width: 50%;
+	width: 35%;
 	height: auto;
-	padding-top: 17px;
+	padding-top: 16px;
 
 }
 
 
 
 .logosvg {
-	fill: #FFF;
+	fill: #ec008c;
 	width: 30px;
 	height: auto;
 
@@ -203,10 +204,6 @@ row2{
 	background-position: center;
 }
 
-.animated{
-	  transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.2s;}
 
 	/*MOUSE OVER*/
 
@@ -268,7 +265,7 @@ ul.topnav {
 
 li{
     float: right;
-	padding-top: 8px;
+	padding-top: 0px;
 }
 
 li a {
@@ -296,7 +293,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 200px;
+    height: 500px;
     width: 100%;
 		margin-top:30px;
 		background-color:#0b0b0b;
