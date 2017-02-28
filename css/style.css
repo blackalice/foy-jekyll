@@ -9,6 +9,7 @@ container{
 	margin-bottom: 40px;
 	display:block;
 }
+
 .button{
 	display:inline-block;
 	width: 150px;
@@ -157,6 +158,8 @@ h2 {
 	text-transform: uppercase;
 	margin-top: 0em;
 margin-bottom: 0em;
+margin-right: 0px;
+margin-left:0px;
 
 }
 
@@ -348,25 +351,28 @@ p{
 
 	font-family: 'acumin-pro', sans-serif;
 	line-height: 1.7em;
-	margin-right: 10px;
-	margin-left:10px;
+	margin-right: 0px;
+	margin-left:0px;
+	padding-left:0px;
+	padding-right:0px;
 	color:#FFF;
 }
 .col{
 	-webkit-column-count: 2;
-	-webkit-column-gap: 20px;
+	-webkit-column-gap: 25px;
 
 	-moz-column-count: 2;
-	-moz-column-gap: 20px;
+	-moz-column-gap: 25px;
 
 	column-count: 2;
-	column-gap: 20px;
+	column-gap: 25px;
 
 	-webkit-column-width: 200px;
 	-moz-column-width: 200px;
 	column-width: 200px;
+	padding-bottom: 20px;
 
-	 padding: .3em;
+	 /*padding: .3em;*/
 
 	margin: 0;
 }

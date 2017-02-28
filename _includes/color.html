@@ -1,24 +1,18 @@
 {% for item in page.color %}
 <style>
-.logosvg {
+/*.logosvg {
 	fill: #{{ item.c }};
+}*/
+
+.logosvg {
+	fill: #FFF;
 }
 li a:hover {
     background-color: #{{ item.c }};}
-h1,h2,.currentpage{
+h1,h2{
 	color:#{{ item.c }};}
 
 
-	header{
-	background: rgba(50,11,249,1);
-	background: -moz-linear-gradient(left, rgba(50,11,249,1) 0%, rgba(57,246,129,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50,11,249,1)), color-stop(100%, rgba(57,246,129,1)));
-	background: -webkit-linear-gradient(left, rgba(50,11,249,1) 0%, rgba(57,246,129,1) 100%);
-	background: -o-linear-gradient(left, rgba(50,11,249,1) 0%, rgba(57,246,129,1) 100%);
-	background: -ms-linear-gradient(left, rgba(50,11,249,1) 0%, rgba(57,246,129,1) 100%);
-	background: linear-gradient(to right, rgba(50,11,249,1) 0%, rgba(57,246,129,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#320bf9', endColorstr='#39f681', GradientType=1 );
-	}
 </style>
 
 
