@@ -26,6 +26,10 @@ img4:
   - title: back and obi
     img: /img/future/backobi.jpg
 
+img5:
+  - title: front cover
+    img: /img/future/front.png
+
 
 color:
   - c: e5160e
@@ -47,6 +51,16 @@ Blue bottle direct trade green juice, gochujang flexitarian vaporware prism mess
 
 Ethical chillwave brooklyn chartreuse asymmetrical consequat, butcher keffiyeh wayfarers helvetica marfa. Kitsch raw denim literally, glossier pabst chambray direct trade tousled pariatur fam. Yr heirloom iceland man bun man braid consequat. Ethical chicharrones subway tile, heirloom bushwick kombucha pour-over non health goth stumptown raw denim raclette. Coloring book tacos cardigan letterpress literally skateboard. Bicycle rights polaroid cardigan, poutine roof party meh sed nisi. Pop-up ea chia beard church-key shoreditch 90's affogato kogi offal, heirloom mlkshk cardigan.<br><br>
 </p>
+
+
+{% for item in page.img5 %}
+<h2> {{ item.title }} </h2>
+   <a class="chocolat-image" href="{{ site.baseurl }}{{ item.img }}" title="caption image 2">
+	<img class="image lazy"  data-original="{{ site.baseurl }}{{ item.img }}" >
+ </a>
+  {% endfor %}
+
+
 
 {% for item in page.img1 %}
 <h2> {{ item.title }} </h2>
