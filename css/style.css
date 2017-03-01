@@ -389,6 +389,63 @@ p{
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	/*nav*/
+
+	ul.topnav {
+	 list-style-type: none;
+		margin: 0;
+		padding: 0;
+	height: 100%;
+	text-align:center;
+	font-family: 'Overpass', sans-serif;
+	font-size:12pt;
+	overflow:visible;
+
+
+}
+
+	.icon{
+	visibility:visible;
+}
+
+	ul.topnav li {display: none;}
+
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	overflow:visible;
+	}
+		ul.topnav.responsive {position:absolute;
+	width:100%;
+
+
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	overflow:visible;
+
+
+	}
+
+
+
+	ul.topnav.responsive li {
+		float: none;
+		display: block;
+	overflow:visible;
+		background-color:#0b0b0b;
+
+	}
+
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: center;
+
+	}
+
+
 
 }
 
@@ -456,7 +513,7 @@ p{
 	}
 
 }
-}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -520,6 +577,7 @@ p{
 }
 
 /* Custom, iPhone Retina */
+
 @media only screen and (max-width : 320px) {
 	/*nav*/
 
@@ -547,11 +605,11 @@ p{
 		display: inline-block;
 	overflow:visible;
 	}
-		ul.topnav.responsive {position:absolute;
+		ul.topnav.responsive
+		{position:absolute;
 	width:100%;
-
-
 	}
+
 	ul.topnav.responsive li.icon {
 		position: absolute;
 		right: 0;
